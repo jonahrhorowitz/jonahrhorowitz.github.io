@@ -1,0 +1,401 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Jonah Horowitz: Publications</title>
+
+  <meta name="description" content="A list of peer-reviewed academic publications, conference presentations, and patents authored by Jonah Horowitz, a researcher at MIT." />
+  <meta name="author" content="Jonah Horowitz" />
+  <meta name="keywords" content="Jonah Horowitz, MIT, Amherst College, chemistry, quantum dots, scholarly articles, patents" />
+  <meta name="robots" content="index, follow" />
+
+  <style>
+    body {
+      font-family: 'serif', 'TeX Gyre Schola';
+      background: #3b5998;
+      color: #ffffff;
+      padding: 20px;
+    }
+    
+    .top-bar {
+      position: sticky;
+      top: 0;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.6); /* semi-transparent dark blue */
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 8px 0;
+      z-index: 999;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+    }
+
+    .top-bar a {
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1rem;
+    }
+
+    .top-bar a:hover {
+      text-decoration: underline;
+    }
+
+
+    h1, h2{margin-bottom:12px;}
+    .pub-item{background:	#dfe3ee;padding:12px;border-radius:8px;margin-bottom:12px;}
+    .title{font-weight:350;margin:0;color:#000000}
+    .authors{color:#333333;margin:0;font-size:16px;}
+    .details{color:#333333;font-size:15px;margin-top:4px;}
+    .abstract{margin-top:8px;background:rgba(255,255,255,0.02);padding:8px;border-radius:6px;display:none;color:#000000}
+    .actions button{margin-top:6px;padding:6px 10px;border-radius:6px;background:#808080;border:none;color:#000000;cursor:pointer;}
+      /* Global link color */
+      a {
+      color: #2E27F5; /* unclicked link color */
+      text-decoration: none; /* remove underline if desired */
+      }
+
+      /* Hover/active/focus state */
+      a:hover, a:active, a:focus {
+      color: #2E27F5; /* clicked or hovered link color */
+      text-decoration: underline; /* optional */
+      }
+
+      /* Optional: only style links inside .details */
+      .details a {
+      color: #2E27F5;
+      }
+
+      .details a:hover {
+      color: #2E27F5;
+      }
+
+
+  </style>
+
+  <script id="json-ld" type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Publications",
+      "url": "https://jonahhorowitz.net/publications.html",
+      "description": "A list of peer-reviewed academic publications and conference presentations authored by Jonah Horowitz.",
+      "isPartOf": {
+        "@type": "WebSite",
+        "name": "Jonah Horowitz",
+        "url": "https://jonahhorowitz.net/"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Jonah Horowitz",
+        "url": "https://jonahhorowitz.net/",
+      }
+    }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home Page",
+        "item": "https://jonahhorowitz.net/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Publications",
+        "item": "https://jonahhorowitz.net/publications.html"
+      }
+    ]
+  }
+</script>
+
+</head>
+
+<body>
+  <nav class="top-bar">
+    <a href="https://jonahhorowitz.net/">Home Page</a>
+    <a href="https://jonahhorowitz.net/bio.html">Bio</a>
+  </nav>
+
+  <h1>Publications</h1>
+
+  <section id="mit-section">
+    <h2>Massachusetts Institute of Technology (2022-)</h2>
+    <div id="mit-journals"></div>
+    <div id="mit-conferences"></div>
+    <div id="mit-patents"></div>
+  </section>
+
+  <section id="amherst-section">
+    <h2>Amherst College (2018-2022)</h2>
+    <div id="amherst-journals"></div>
+    <div id="amherst-conferences"></div>
+    <div id="amherst-patents"></div>
+  </section>
+
+  <script>
+
+  const papers = [
+    {
+      title: "Challenges of II-VI and III-V Blue Quantum Dot Light-Emitting Diodes",
+      authors: ["Shaun Tan", "Jonah R. Horowitz", "Oliver J. Tye", "Moungi G. Bawendi"],
+      journal: "Advanced Materials",
+      year: "2025",
+      doi: "10.1002/adma.202512379",
+      abstract: "Quantum dot light-emitting diodes (QD-LEDs) are electroluminescent devices where the emissive layer consists of inorganic colloidal quantum dots. Recent breakthroughs have enabled the development of bright and efficient blue-emitting QD-LEDs based on heavy metal-free compositions. However, challenges remain that hinder their practical application in electroluminescent displays and lighting technologies. The primary obstacle is their limited operational lifetimes which remain significantly below practical requirement standards, especially in comparison to the red- and green-emitting QD-LEDs. Another important issue is the low color purity and broad spectral linewidths of heavy metal-free blue quantum dot compositions. Additional problems include transient electroluminescent behaviors such as fluorescence intermittency and positive aging effects. This review examines the current understanding of the physical mechanisms underlying these challenges faced by blue QD-LEDs. Often, contradictory explanations are proposed to account for the same phenomenon. Here, potential interpretations are suggested that may help reconcile the conflicting reports. Recent advances are further examined that have contributed to the development of state-of-the-art blue QD-LEDs."
+      , affiliation: "MIT"
+      , type: "journal"
+  },
+
+
+
+    {
+      title: "Oxygen Vacancy Formation in ZnSeTe Blue Quantum Dot Light-Emitting Diodes",
+      authors: ["Shaun Tan", "Sujin Park", "Seung-Gu Choi", "Oliver J. Tye", "Ruiqi Zhang", "Jonah R. Horowitz", "Tanguy Terlier", "Heejae Chung", "Vladimir Bulović", "Jeonghun Kwak", "Jin-Wook Lee", "Taehyung Kim", "Moungi G. Bawendi"],
+      journal: "Journal of the American Chemical Society",
+      year: "2025",
+      doi: "10.1021/jacs.5c13973",
+      abstract: "Recent advancements have led to the development of bright and heavy metal-free blue-emitting quantum dot light-emitting diodes (QLEDs). However, consensus understanding of their distinct photophysical and electroluminescent dynamics remains elusive. This work correlates the chemical and electronic changes occurring in a QLED during operation using depth-resolved and operando techniques. The results indicate that oxygen vacancies form in the ZnMgO layer during operation, with important implications on the charge injection and electrochemical dynamics. Taken together, the results suggest a causal relationship between oxygen vacancy formation and operational degradation of the blue-emitting ZnSeTe-based QLEDs."  
+      , affiliation: "MIT",
+      arxiv: "https://arxiv.org/abs/2509.12598" // <-- arXiv link
+      , type: "journal"
+
+      }
+
+      ,
+
+    {
+      title: "Third-order photon correlations extract single-nanocrystal multiexciton properties in solution",
+      authors: ["Jonah R. Horowitz", "David B. Berkinsky", "Henry C. Bendekgey", "Oliver J. Tye", "Tara Šverko", "Katherine E. Shulenberger", "Moungi G. Bawendi"],
+      journal: "Optics Express",
+      year: "2025",
+      doi: "10.1364/OE.564578",
+      abstract: "Colloidal semiconductor nanocrystals are considered promising materials for high-flux optical applications, including lasing, light-emitting diodes, biological imaging, and quantum optics. In high-flux applications, multiexcitons can significantly contribute to emission, influencing its brightness, spectral purity, and kinetics. As a result, understanding and controlling multiexciton emission in colloidal nanocrystal materials is of the utmost importance. In the past, single-nanocrystal photon correlation methods have been applied to understand biexciton and triexciton efficiencies, lifetimes, and spectra. While powerful, such methods suffer from user selection bias and require stable emission from single nanocrystals. To compensate for this shortcoming, second-order correlation methods were developed to extract sample-averaged biexciton properties from a solution of nanocrystals. Until now, however, the analogous third-order solution photon correlation methods remained unexplored. In this work, we present a pair of third-order photon correlation techniques to obtain the sample-averaged single-nanocrystal triexciton quantum yield and lifetime in a solution-phase experiment. These techniques derive from the relationship between the Poisson probability of nanocrystal photon absorption and the intrinsic probability of nanocrystal photon emission. We validate the theoretical background of these techniques by creating a numerical model to simulate the diffusion and emission of many nanocrystals in solution. Our simulations confirm that the average triexciton quantum yield and triexciton lifetime can be extracted from a solution of nanocrystals. These techniques will enable researchers to gain a better understanding of the fundamental multiexciton properties of colloidal nanocrystals."
+      , affiliation: "MIT"  ,
+      dryad: "https://datadryad.org/dataset/doi:10.5061/dryad.2547d7x1z"
+      , type: "journal"
+
+  },
+
+
+  {
+      title: "Accelerating the measurement of time-resolved emission line shapes with a denoising neural network",
+      authors: ["Oliver J. Tye", "Jonah R. Horowitz", "Weiwei Sun", "Chantalle J. Krajewska", "David B. Berkinsky", "Andrew H. Proppe", "Moungi G. Bawendi"],
+      journal: "Physical Review B",
+      year: "2025",
+      doi: "10.1103/PhysRevB.111.035425",
+      abstract: "Single coherent photons on demand are essential inputs for many applications of quantum optics, including for linear optical quantum computing. One critical parameter when assessing the potential of a material to emit coherent single photons is the homogeneous linewidth, the measurement of which is often obscured by fast spectral fluctuations. Photon correlation Fourier spectroscopy (PCFS) provides a more accurate measurement of the homogeneous emission linewidth than traditional techniques by probing the system on timescales faster than spectral diffusion. However, PCFS is limited by the long integration times it requires, restricting its use to only the most stable materials and making it difficult to study large numbers of emitters within these select samples. Our group previously developed a machine-learning (ML) algorithm to denoise PCFS signals which showed promise on a single experimental dataset but was difficult to further validate. Here, we demonstrate the use of a similar ML model to accelerate PCFS experiments by an order of magnitude and verify its accuracy on a statistical number of samples. We use 10% of the photon stream from full PCFS experiments to replicate shorter measurements, resulting in data with prohibitively high levels of noise. By employing a denoising autoencoder neural network, we extract the underlying signal from the noisy truncated measurements and unambiguously verify the results of the reconstructions through direct comparison with the original experiments. We confirm the generalization of the ML treatment through application to >80 experiments from multiple samples including CsPbB⁢r<sub>3</sub> and InP/ZnSe/ZnS nanocrystals. The large-scale verification of the ML reconstructions enables confident use of ML to accelerate future PCFS experiments up to 10×, enhancing the practical capabilities of this technique and further promoting the application of ML to other spectroscopic methods."
+      , affiliation: "MIT"
+      , type: "journal"
+
+  },
+
+
+  {
+      title: "Tuning Intermolecular Interactions for Chiral Analysis: The Microwave Spectra and Molecular Structures of the Chiral Tag Candidates cis- and trans-2-Fluoro-3-(trifluoromethyl)oxirane and Their Gas-Phase Heterodimers with the Argon Atom",
+      authors: ["Helen O. Leung", "Mark D. Marshall", "Jordan M. Aucoin", "Jonah R. Horowitz"],
+      journal: "The Journal of Physical Chemistry A",
+      year: "2024",
+      doi: "10.1021/acs.jpca.4c05830",
+      abstract: "The cis and trans isomers of the chiral tagging candidate molecule, 2-fluoro-3-(trifluoromethyl)oxirane, as well as the lowest energy gas-phase heterodimer of each with the argon atom, are characterized via quantum chemistry calculations and microwave rotational spectroscopy from 5 to 18 GHz and their ground state, vibrationally averaged structures, are determined. Apart from the cis/trans nature of the ring substitution and small differences in the dihedral angle specifying the rotation of the trifluoromethyl group, the two oxirane molecules and their respective argon complexes each have remarkable structural similarity. In contrast, the binding mode of argon to the oxirane, while similar for the two complexes here, is distinct from those modes observed in previous argon-fluorooxirane species. The ability to tune the preferred mode of binding with differing levels of fluorine substitution may prove advantageous in applications of chiral tagging to a wide variety of analytes."    
+      , affiliation: "Amherst"
+      , type: "journal"
+  },
+
+  {
+      title: "Highly stable and pure single-photon emission with 250 ps optical coherence times in InP colloidal quantum dots",
+      authors: ["Andrew H. Proppe", "David B. Berkinsky", "Hua Zhu", "Tara Šverko", "Alexander E. K. Kaplan", 
+              "Jonah R. Horowitz", "Taehyung Kim", "Heejae Chung", "Shinae Jung", "Moungi G. Bawendi"],
+      journal: "Nature Nanotechnology",
+      year: "2023",
+      doi: "10.1038/s41565-023-01432-0",
+      abstract: "Quantum photonic technologies such as quantum communication, sensing or computation require efficient, stable and pure single-photon sources. Epitaxial quantum dots (QDs) have been made capable of on-demand photon generation with high purity, indistinguishability and brightness, although they require precise fabrication and face challenges in scalability. By contrast, colloidal QDs are batch synthesized in solution but typically have broader linewidths, low single-photon purities and unstable emission. Here we demonstrate spectrally stable, pure and narrow-linewidth single-photon emission from InP/ZnSe/ZnS colloidal QDs. Using photon correlation Fourier spectroscopy, we observe single-dot linewidths as narrow as ~5 µeV at 4 K, giving a lower-bounded optical coherence time, T2, of ~250 ps. These dots exhibit minimal spectral diffusion on timescales of microseconds to minutes, and narrow linewidths are maintained on timescales up to 50 ms, orders of magnitude longer than other colloidal systems. Moreover, these InP/ZnSe/ZnS dots have single-photon purities g(2)(τ = 0) of 0.077–0.086 in the absence of spectral filtering. This work demonstrates the potential of heavy-metal-free InP-based QDs as spectrally stable sources of single photons. "
+      , affiliation: "MIT",
+      dryad: "https://zenodo.org/records/7884365"
+      , type: "journal"
+
+  },
+
+
+  {
+      title: "The microwave spectra and molecular structures of (E)-1-chloro-1, 2-difluoroethylene and its complex with the argon atom",
+      authors: ["Helen O. Leung", "Mark D. Marshall", "Aaron T. Bozzi", "Jonah R. Horowitz", "Andres C. Niño", 
+              "Hannah K. Tandon", "Leonard Yoon"],
+      journal: "Journal of Molecular Spectroscopy",
+      year: "2021",
+      doi: "10.1016/j.jms.2021.111520",
+      abstract: "The microwave spectra of four isotopologues of (E)-1-chloro-1,2-difluoroethylene, and additionally, the spectra of two isotopologues of the complex formed between argon and (E)-1-chloro-1,2-difluoroethylene are obtained in the 5.6–18.1 GHz region using broadband chirped pulse Fourier transform microwave spectroscopy. The argon atom is determined to occupy a position out of the symmetry plane of the haloethylene where it can interact most strongly with the fluorine atom and the chlorine atom located geminal to each other as well as the π electron density at the end of the double bond on carbon atom C-1. As in the previously studied argon-2-chloro-1,1-difluoroethylene complex, the argon atom interacts most strongly with a fluorine atom and the chlorine atom regardless of whether they are located geminal or cis to each other."
+      , affiliation: "Amherst"
+      , type: "journal"
+  },
+
+
+  {
+      title: "The microwave spectrum and molecular structure of the gas-phase heterodimer formed between argon and glycidol",
+      authors: ["Helen O. Leung", "Mark D. Marshall","Jonah R. Horowitz", "Devon J. Stuart"],
+      journal: "Journal of Molecular Spectroscopy",
+      year: "2021",
+      doi: "10.1016/j.jms.2021.111520",
+      abstract: "The microwave rotational spectrum of the gas-phase heterodimer formed between glycidol and the argon atom is measured from 5.6 to 18.1 GHz. Despite the existence of two low energy conformers for the glycidol molecule, the spectrum of only one argon-glycidol complex is observed, corresponding to the global minimum energy structure. Higher energy isomers, and indeed less abundant isotopologues of the observed species, are presumably not produced with sufficient number density to be detected under the conditions of the experiment. The spectroscopic constants obtained from the analysis of the spectrum are combined with ab initio quantum chemistry predictions for the dipole moment components to determine the structure of the lowest energy arrangement for argon-glycidol. This structure is compared with those previously observed for the argon complexes of analogous fluoromethyloxirane molecules."    , affiliation: "Amherst",
+      type: "journal"
+  },
+
+  {
+      title: "The Microwave Spectra And Molecular Structures Of The Chiral Tagging Candidate Cis-1, 3, 3, 3-tetrafluoro-1, 2-epoxypropane And Its Gas Phase Heterodimer With The Argon Atom",
+      authors: ["Jonah R. Horowitz, Helen O. Leung, Mark D. Marshall"],
+      journal: "Proceedings of the International Symposium on Molecular Spectroscopy",
+      year: "2022",
+      doi: "10.15278/isms.2022.TE06",
+      abstract: "We are exploring how argon binding to substituted oxiranes, which have potential applications as chiral tags, is modulated by varying the identity of the substituents on the epoxy ring. Previously studied systems generally showed close contacts primarily to atoms contained in the ring. However, for complexes with {\it cis}-1, 3, 3, 3-tetrafluoro-1, 2-epoxypropane (cFTFO) multiple minima with similar energies are predicted by quantum chemistry calculations including some with significant interactions between the argon atom and substituents on the oxirane. Analysis of the rotational spectra obtained using chirped pulse Fourier transform microwave spectroscopy for four isotopologues of Ar-cFTFO reveals that the argon atom binds to the back of the ring; very different from Ar-3, 3, 3-trifluoro-1, 2-epoxypropane (Ar-TFO) and Ar-3, 3-difluoro-1, 2-epoxypropane, but similar to Ar-{\it trans}-1, 3, 3, 3-tetrafluoro-1, 2-epoxypropane. The utility of cFTFO in chiral analysis is explored via quantum chemistry calculations on the TFO-cFTFO heterodimer and progress on the observation and analysis of the two diastereomeric forms of this species will be reported."
+      , affiliation: "Amherst",
+      type: "conference"
+  }
+
+
+  ];
+
+  // Containers
+  const containers = {
+    MIT: {
+      journal: document.getElementById("mit-journals"),
+      conference: document.getElementById("mit-conferences"),
+      patent: document.getElementById("mit-patents")
+    },
+    Amherst: {
+      journal: document.getElementById("amherst-journals"),
+      conference: document.getElementById("amherst-conferences"),
+      patent: document.getElementById("amherst-patents")
+    }
+  };
+
+  // JSON-LD setup
+  const jsonLD = { 
+    "@context": "https://schema.org", 
+    "@type": "ItemList", 
+    "name": "Academic Contributions of Jonah R. Horowitz", 
+    "author": { 
+      "@type": "Person", 
+      "name": "Jonah Horowitz",
+      "affiliation": { "@type": "Organization", "name": "Massachusetts Institute of Technology" }
+    }, 
+    "itemListElement": [] 
+  };
+
+  // Function to create HTML for a paper/conference/patent
+  function createPaperHTML(paper, number) {
+    const article = document.createElement("div");
+    article.className = "pub-item";
+
+    const dryadLink = paper.dryad ? ` | <span class="dataset"><a href="${paper.dryad}" target="_blank" rel="noopener noreferrer">Paper data</a></span>` : "";
+    const arxivLink = paper.arxiv ? ` | <span class="dataset"><a href="${paper.arxiv}" target="_blank" rel="noopener noreferrer">Arxiv</a></span>` : "";
+
+    // For patents, show patent number instead of DOI/journal
+    let detailsHTML;
+    if (paper.type === "patent") {
+      detailsHTML = `<span class="journal">Patent</span> | <span class="year">${paper.year}</span> | <span class="doi"><a href="${paper.patentURL}" target="_blank">${paper.patentNumber}</a></span>`;
+    } else {
+      detailsHTML = `<span class="journal">${paper.journal}</span> | <span class="year">${paper.year}</span> | <span class="doi"><a href="https://doi.org/${paper.doi}" target="_blank" rel="noopener noreferrer">${paper.doi}</a></span>${dryadLink}${arxivLink}`;
+    }
+
+    article.innerHTML = `
+      <h3 class="title">${number}. <strong>${paper.title}</strong></h3>
+      <p class="authors">${paper.authors.map(a => a === "Jonah R. Horowitz" ? `<strong>${a}</strong>` : a).join(", ")}</p>
+      <div class="details">${detailsHTML}</div>
+      <div class="actions"><button>Show abstract</button></div>
+      <div class="abstract">${paper.abstract}</div>
+    `;
+
+    // Toggle abstract
+    article.querySelector("button").addEventListener("click", () => {
+      const abs = article.querySelector(".abstract");
+      const shown = abs.style.display === "block";
+      abs.style.display = shown ? "none" : "block";
+      article.querySelector("button").textContent = shown ? "Show abstract" : "Hide abstract";
+    });
+
+    return article;
+  }
+
+  // Render all papers by affiliation and type
+  function renderSection(affiliation) {
+    const papersByAff = papers.filter(p => p.affiliation === affiliation);
+
+    ["journal", "conference", "patent"].forEach(type => {
+      const papersByType = papersByAff.filter(p => p.type === type);
+      if (papersByType.length > 0) {
+        const headerText = type === "journal" ? "Papers" : type === "conference" ? "Conference Presentations" : "Patents";
+        const sectionHeader = document.createElement("h3");
+        sectionHeader.textContent = headerText;
+        containers[affiliation][type].appendChild(sectionHeader);
+
+        papersByType.forEach((p, i) => {
+          const number = papersByType.length - i; // reverse numbering
+          containers[affiliation][type].appendChild(createPaperHTML(p, number));
+        });
+      }
+    });
+  }
+
+  // Render MIT and Amherst sections
+  renderSection("MIT");
+  renderSection("Amherst");
+
+  // Generate JSON-LD
+  papers.forEach((p, i) => {
+    let entry = {};
+    if (p.type === "patent") {
+      entry = {
+        "@type": "Patent",
+        "position": i + 1,
+        "name": p.title,
+        "inventor": p.authors.map(a => ({ "@type": "Person", "name": a })),
+        "datePublished": p.year,
+        "identifier": p.patentNumber,
+        ...(p.patentURL ? { "url": p.patentURL } : {})
+      };
+    } else {
+      entry = {
+        "@type": "ScholarlyArticle",
+        "position": i + 1,
+        "name": p.title,
+        "author": p.authors.map(a => 
+          a === "Jonah R. Horowitz"
+          ? { 
+              "@type": "Person", 
+              "name": a,
+              "sameAs": [
+                "https://orcid.org/0000-0002-8584-1751",
+                "https://scholar.google.com/citations?user=3z2cJiEAAAAJ&hl=en",
+                "https://www.researchgate.net/profile/Jonah-Horowitz",
+                "https://www.linkedin.com/in/jonah-horowitz-3933051b9/",
+                "https://github.com/jonahrhorowitz"
+              ], 
+              "affiliation": p.affiliation === "MIT"
+                ? { "@type": "Organization", "name": "Massachusetts Institute of Technology" }
+                : { "@type": "Organization", "name": "Amherst College" }
+            } 
+          : { "@type": "Person", "name": a }
+        ),
+        "isPartOf": { "@type": "Periodical", "name": p.journal },
+        "datePublished": p.year,
+        "identifier": p.doi,
+        "url": p.doi ? `https://doi.org/${p.doi}` : undefined,
+        "abstract": p.abstract,
+        ...(p.dryad ? { "sameAs": p.dryad } : {}),
+        ...(p.arxiv ? { "sameAs": p.arxiv } : {})
+      };
+    }
+    jsonLD.itemListElement.push(entry);
+  });
+
+  document.getElementById("json-ld").textContent = JSON.stringify(jsonLD, null, 2);
+
+  </script>
+</body>
+</html>
