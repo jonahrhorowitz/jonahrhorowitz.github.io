@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Jonah Horowitz — Chemistry researcher at MIT. Academic profile, publications, and contact information." />
+  <meta name="author" content="Jonah Horowitz"/>
+  <meta name="keywords" content="Jonah Horowitz, Jonah R. Horowitz, MIT, PhD, Massachusetts Institute of Technology, quantum dots, chemistry, materials science" />
+
+  <title>Jonah Horowitz</title>
+
+  <style>
+    /* Reset & basic styles */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'serif', 'TeX Gyre Schola';
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: radial-gradient(circle, #8b9dc3 0%, #3b5998 100%);
+      color: #e6eef6;
+    }
+
+    /* Container for profile */
+    .profile-container {
+      display: flex;
+      flex-direction: column;   /* ✅ Add this */
+      align-items: center;
+      gap: 24px;
+      text-align: center;
+      position: relative;
+    }
+
+    /* Profile image */
+    .profile-container img {
+      width: 230px;
+      height: 230px;
+      border-radius: 50%;
+      border: 2px solid #7dd3fc;
+      object-fit: cover;
+      animation: float 3s ease-in-out infinite;
+
+    }
+
+    @keyframes float {
+      0%   { transform: translateY(0); }
+      50%  { transform: translateY(-5px); }
+      100% { transform: translateY(0); }
+    }
+
+    /* Name and links */
+    .profile-text {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      text-align: center;
+    }
+
+    .profile-text h1 {
+      font-size: 4rem;
+      font-weight: 700;
+      text-align: center;
+    }
+
+    .profile-text .links {
+      display: flex;
+      gap: 16px;
+      font-size: 1.25rem;
+      position: relative;
+      justify-content: center;   
+    }
+
+    .profile-text .links a {
+      color: #011f4b;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.2s;
+      cursor: pointer;
+    }
+
+    .profile-text .links a:hover {
+      color: #005b96;
+    }
+
+    /* Popup box */
+    .popup-box {
+      position: absolute;
+      top: 2.5rem;
+      left: 50%;
+      transform: translateX(-50%) translateY(-10px);
+      background: #e6eef6;
+      color: #011f4b;
+      font-size: 1.1rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      padding: 1rem 1.2rem;
+      min-width: 220px;
+      display: none;
+      opacity: 0;
+      transition: all 0.3s ease;
+      z-index: 5;
+    }
+
+    .popup-box.show {
+      display: block;
+      opacity: 1;
+      transform: translateX(-50%) translateY(0);
+    }
+
+    .popup-box::before {
+      content: "";
+      position: absolute;
+      top: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      border-width: 10px;
+      border-style: solid;
+      border-color: transparent transparent #e6eef6 transparent;
+    }
+
+    .popup-box a {
+      display: block;
+      margin-bottom: 0.5rem;
+      color: #005b96;
+      text-decoration: none;
+      text-align:left;
+
+    }
+
+    .popup-box a:hover {
+      text-decoration: underline;
+    }
+
+    /* Mobile responsiveness */
+    @media (max-width: 640px) {
+      .profile-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 16px;
+      }
+
+      .profile-text h1 {
+        font-size: 2.2rem;
+      }
+
+      .profile-text .links {
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      .popup-box {
+        top: 3rem;
+      }
+    }
+  </style>
+
+  <!-- JSON-LD structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Jonah Horowitz",
+    "url": "https://jonahhorowitz.net/",
+    "publisher": {
+      "@type": "Person",
+      "name": "Jonah Horowitz"
+    },
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://jonahhorowitz.net/?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Homepage",
+    "url": "https://jonahhorowitz.net/",
+    "isPartOf": {
+      "@type": "WebSite",
+      "url": "https://jonahhorowitz.net/"
+    },
+    "hasPart": [
+      {
+        "@type": "WebPage",
+        "name": "Publications",
+        "url": "https://jonahhorowitz.net/publications.html"
+      },
+      {
+        "@type": "WebPage",
+        "name": "Bio",
+        "url": "https://jonahhorowitz.net/bio.html"
+      }
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Jonah Horowitz",
+    "url": "https://jonahhorowitz.net/",
+    "image": "https://jonahhorowitz.net/images/profile.jpg",
+    "jobTitle": "Chemistry researcher",
+    "affiliation": {
+      "@type": "Organization",
+      "name": "Massachusetts Institute of Technology"},
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Bawendi Lab",
+      "url": "https://nanocluster.mit.edu/"
+    },
+    "sameAs": [
+      "https://orcid.org/0000-0002-8584-1751",
+      "https://scholar.google.com/citations?user=3z2cJiEAAAAJ",
+      "https://www.researchgate.net/profile/Jonah-Horowitz",
+      "https://www.linkedin.com/in/jonah-horowitz-3933051b9/",
+      "https://github.com/jonahrhorowitz"
+    ],
+    "mainEntityOfPage": "https://jonahhorowitz.net/",
+    "hasPart": [
+      {
+        "@type": "WebPage",
+        "name": "Publications",
+        "url": "https://jonahhorowitz.net/publications.html"
+      },
+      {
+        "@type": "WebPage",
+        "name": "Bio",
+        "url": "https://jonahhorowitz.net/bio.html"
+      }
+    ]
+  }
+  </script>
+</head>
+
+
+<body>
+  <div class="profile-container">
+    <img src="images/profile2.jpeg" alt="Profile picture of Jonah Horowitz, an MIT graduate student">
+    <div class="profile-text">
+      <h1>Jonah Horowitz</h1>
+      <div class="links">
+        <a href="bio.html">Bio</a>
+        <a id="links-btn">Contact Info & Links</a>
+        <a href="pub.html">Publications</a>
+
+        <div class="popup-box" id="popup">
+          <a href="#" id="email-link">Email</a>
+          <a href="https://www.linkedin.com/in/jonah-horowitz-3933051b9/">LinkedIn</a>
+          <a href="https://scholar.google.com/citations?user=3z2cJiEAAAAJ&hl=en">Google Scholar</a>
+          <a href="https://www.researchgate.net/profile/Jonah-Horowitz">ResearchGate</a>
+          <a href="https://nanocluster.mit.edu/people">Bawendi Lab Homepage</a>
+          <a href="https://github.com/jonahrhorowitz">GitHub</a>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const linksBtn = document.getElementById('links-btn');
+    const popup = document.getElementById('popup');
+
+    linksBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      popup.classList.toggle('show');
+    });
+
+    document.addEventListener('click', (e) => {
+      if (!popup.contains(e.target) && !linksBtn.contains(e.target)) {
+        popup.classList.remove('show');
+      }
+    });
+  </script>
+
+
+<script>
+  const user = "jonahh";
+  const domain = "mit.edu";
+  const emailLink = document.getElementById("email-link");
+  emailLink.href = `mailto:${user}@${domain}`;
+  emailLink.textContent = `Email`;
+</script>
+
+
+</body>
+</html>
